@@ -12,4 +12,4 @@ export default () => {
       navigate: sampleNavigate,
     };
   }, [location]);
-}
+};
