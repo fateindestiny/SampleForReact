@@ -1,16 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {unstable_HistoryRouter as HistoryRouter} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {history} from './utils/commonUtils';
+import LoadingPortals from './ui/components/Loading';
+import {StoreProvider} from './stores';
+import {createRoot} from 'react-dom/client';
 
-ReactDOM.render(
-    <HistoryRouter history={history}>
-      <App/>
-    </HistoryRouter>,
-    document.getElementById('root'),
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+root.render(
+  <HistoryRouter history={history}>
+    <StoreProvider>
+      <LoadingPortals />
+      <App />
+    </StoreProvider>
+  </HistoryRouter>,
 );
 
 // If you want to start measuring performance in your app, pass a function

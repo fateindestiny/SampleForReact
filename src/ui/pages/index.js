@@ -1,12 +1,12 @@
 import loadable from '@loadable/component';
-import LoadingContainer from '../components/LoadingContainer';
+import Loading from '../components/Loading';
 
 export const MainContainer = loadable(
     () => import('./main/MainContainer'),
-    {fallback: <LoadingContainer/>},
+    {fallback: <Loading/>},
 );
 
 export const RouterContainer = loadable(
     () => import('./router/RouterContainer'),
-    {fallback: <LoadingContainer/>},
+    {fallback: <Loading/>},
 );
