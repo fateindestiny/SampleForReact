@@ -1,6 +1,7 @@
 import React from 'react';
 import {unstable_HistoryRouter as HistoryRouter} from 'react-router-dom';
 import './index.css';
+import './assets/css/common.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {history} from './utils/commonUtils';

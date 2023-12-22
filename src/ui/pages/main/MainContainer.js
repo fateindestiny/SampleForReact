@@ -8,7 +8,7 @@ const MainContainer = () => {
     sampleStore: {showLoading},
   } = useStore();
   const {navigate} = useRouter();
-  const moveSubPage = () => {
+  const onClickMoveSubPage = () => {
     navigate('/router');
   };
 
@@ -17,19 +17,27 @@ const MainContainer = () => {
     showLoading();
   };
 
+  const onClickMoveNavigationSamplePage = () => {
+    navigate('/navigation');
+  };
+
   return (
     <div>
       Sample Main Page
       <ul>
         <li>
-          Router Sample
-          <br />
-          <button onClick={moveSubPage}>Move Sub page</button>
+          <p>Router Sample</p>
+          <button onClick={onClickMoveSubPage}>Move Sub page</button>
         </li>
         <li>
-          Loading Sample
-          <br />
+          <p>Loading Sample</p>
           <button onClick={onClickLoadingSample}>Show Loading</button>
+        </li>
+        <li>
+          <p>Navigation Sample</p>
+          <button onClick={onClickMoveNavigationSamplePage}>
+            Move Navigation Sample Page
+          </button>
         </li>
       </ul>
     </div>
