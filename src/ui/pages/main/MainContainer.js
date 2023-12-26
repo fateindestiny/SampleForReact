@@ -11,30 +11,29 @@ const MainContainer = () => {
   const {navigate} = useRouter();
   const sampleList = [
     {
-      title: 'Router Sample',
-      buttonTitle: 'Move Sub Page',
+      titleId: 'routerSample.title',
+      buttonTitleId: 'routerSample.buttonTitle',
       onClick: () => {
         navigate('/router');
       },
     },
     {
-      title: 'Loading Sample',
-      buttonTitle: 'Show Loading',
+      titleId: 'loadingSample.title',
+      buttonTitleId: 'loadingSample.buttonTitle',
       onClick: () => {
-        console.log('test:showLoading');
         showLoading();
       },
     },
     {
-      title: 'Navigation Sample',
-      buttonTitle: 'Move Navigation Sample Page',
+      titleId: 'navigationSample.title',
+      buttonTitleId: 'navigationSample.buttonTitle',
       onClick: () => {
         navigate('/navigation');
       },
     },
     {
-      title: 'Axios Sample',
-      buttonTitle: 'Move Axios Sample Page',
+      titleId: 'axiosSample.title',
+      buttonTitleId: 'axiosSample.buttonTitle',
       onClick: () => {
         navigate('/axios');
       },

@@ -4,20 +4,28 @@ import './index.css';
 import './assets/css/common.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {history} from './utils/commonUtils';
+import {flattenMessages, history} from './utils/commonUtils';
 import LoadingPortals from './ui/components/Loading';
 import {StoreProvider} from './stores';
 import {createRoot} from 'react-dom/client';
+import {IntlProvider} from 'react-intl';
+import locale from './locale';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
 
+const defaultLanguage = 'en';
+
 root.render(
   <HistoryRouter history={history}>
-    <StoreProvider>
-      <LoadingPortals />
-      <App />
-    </StoreProvider>
+    <IntlProvider
+      locale={defaultLanguage}
+      messages={flattenMessages(locale[defaultLanguage])}>
+      <StoreProvider>
+        <LoadingPortals />
+        <App />
+      </StoreProvider>
+    </IntlProvider>
   </HistoryRouter>,
 );
 

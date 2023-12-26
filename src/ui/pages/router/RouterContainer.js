@@ -1,7 +1,9 @@
+import React from 'react';
+import {FormattedMessage} from 'react-intl';
 
 const RouterContainer = () => {
   return <div>
-    Sample Router Container
+    <FormattedMessage id={'routerSample.subPageTitle'} />
   </div>
 }
 

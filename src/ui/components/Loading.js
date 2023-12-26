@@ -2,6 +2,7 @@ import {observer} from 'mobx-react-lite';
 import {Portal} from 'react-portal';
 import {useStore} from '../../hooks';
 import {useEffect, useRef} from 'react';
+import {FormattedMessage} from 'react-intl';
 
 const LoadingContainer = ({onClickDismissLoading}) => {
   return (
@@ -15,7 +16,9 @@ const LoadingContainer = ({onClickDismissLoading}) => {
       }}>
       Loading...
       <p>
-        <button onClick={onClickDismissLoading}>Dismiss Loading</button>
+        <button onClick={onClickDismissLoading}>
+          <FormattedMessage id={'loadingSample.dismissLoading'} />
+        </button>
       </p>
     </div>
   );
