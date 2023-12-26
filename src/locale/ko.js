@@ -1,4 +1,3 @@
+const ko = {};
 
-export default {
-
-}
+export default ko;

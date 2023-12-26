@@ -1,4 +1,4 @@
-export default {
+const en = {
   common: {
     list: 'List',
   },
@@ -23,3 +23,5 @@ export default {
     buttonGetSampleDataTitle: 'Get Sample Data',
   },
 };
+
+export default en;

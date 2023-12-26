@@ -1,4 +1,6 @@
 import ko from './ko';
 import en from './en';
 
-export default {ko, en};
+const locale = {ko, en};
+
+export default locale;

@@ -1,4 +1,4 @@
-export default {
+const storageUtils = {
   get: key => {
     if (!localStorage[key] || localStorage[key] === 'undefined') {
       return undefined;
@@ -17,3 +17,5 @@ export default {
     localStorage.clear();
   },
 };
+
+export default storageUtils;
