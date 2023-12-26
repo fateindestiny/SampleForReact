@@ -1,5 +1,7 @@
 export default {
-  common: {},
+  common: {
+    list: 'List',
+  },
   routerSample: {
     title: 'Router Sample',
     buttonTitle: 'Move sub Page',
@@ -17,5 +19,7 @@ export default {
   axiosSample: {
     title: 'Axios Sample',
     buttonTitle: 'Move Axios Sample Page',
+    subPageTitle: 'Axios Sample Page',
+    buttonGetSampleDataTitle: 'Get Sample Data',
   },
 };

@@ -28,6 +28,10 @@ const routes = [
       },
     ],
   },
+  {
+    path: '/axios',
+    element: <pages.AxiosContainer />,
+  },
 ];
 
 export default routes;

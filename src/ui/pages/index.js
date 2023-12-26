@@ -29,3 +29,7 @@ export const NavigationPage3Container = loadable(
   () => import('./navigation/Page3Container'),
   {fallback: <Loading />},
 );
+
+export const AxiosContainer = loadable(() => import('./axios/AxiosContainer'), {
+  fallback: <Loading />,
+});
