@@ -3,6 +3,8 @@ import {Portal} from 'react-portal';
 import {useStore} from '../../hooks';
 import {useEffect, useRef} from 'react';
 import {FormattedMessage} from 'react-intl';
+import Lottie from 'react-lottie-player';
+import bellJson from '../../assets/lottie/bell.json';
 
 const LoadingContainer = ({onClickDismissLoading}) => {
   return (
@@ -15,8 +17,15 @@ const LoadingContainer = ({onClickDismissLoading}) => {
         zIndex: 1002,
       }}>
       Loading...
+      <Lottie animationData={bellJson} loop play />
       <p>
-        <button onClick={onClickDismissLoading}>
+        <button
+          style={{
+            padding: '5px',
+            width: '100%',
+            height: '30px',
+          }}
+          onClick={onClickDismissLoading}>
           <FormattedMessage id={'loadingSample.dismissLoading'} />
         </button>
       </p>
