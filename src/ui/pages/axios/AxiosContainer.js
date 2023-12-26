@@ -3,6 +3,7 @@ import {useStore} from '../../../hooks';
 import {useState} from 'react';
 import ListItem from './components/ListItem';
 import {observer} from 'mobx-react-lite';
+import {SampleButton} from '../../components/Button';
 
 const AxiosContainer = () => {
   const {
@@ -20,9 +21,11 @@ const AxiosContainer = () => {
       <p className="title">
         <FormattedMessage id={'axiosSample.subPageTitle'} />
       </p>
-      <button onClick={onClickGetSampleData}>
+      <SampleButton style={{
+        marginTop: '10px',
+      }} onClick={onClickGetSampleData}>
         <FormattedMessage id={'axiosSample.buttonGetSampleDataTitle'} />
-      </button>
+      </SampleButton>
       <p
         style={{
           marginTop: '10px',
