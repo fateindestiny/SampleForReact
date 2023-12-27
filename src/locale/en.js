@@ -1,6 +1,8 @@
 const en = {
   common: {
     list: 'List',
+    confirm: 'Confirm',
+    cancel: 'cancel',
   },
   routerSample: {
     title: 'Router Sample',
@@ -21,6 +23,12 @@ const en = {
     buttonTitle: 'Move Axios Sample Page',
     subPageTitle: 'Axios Sample Page',
     buttonGetSampleDataTitle: 'Get Sample Data',
+  },
+  popupSample: {
+    title: 'Popup Sample',
+    buttonTitle: 'Move Popup Sample Page',
+    subPageTitle: 'Popup Sample Page',
+    globalPopupMessage:'Global popup sample message',
   },
 };
 

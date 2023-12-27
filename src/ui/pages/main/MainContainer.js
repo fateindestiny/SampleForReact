@@ -38,6 +38,13 @@ const MainContainer = () => {
         navigate('/axios');
       },
     },
+    {
+      titleId: 'popupSample.title',
+      buttonTitleId: 'popupSample.buttonTitle',
+      onClick: () => {
+        navigate('/popup');
+      },
+    },
   ];
 
   return (

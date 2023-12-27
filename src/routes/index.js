@@ -32,6 +32,10 @@ const routes = [
     path: '/axios',
     element: <pages.AxiosContainer />,
   },
+  {
+    path: '/popup',
+    element: <pages.PopupContainer />,
+  },
 ];
 
 export default routes;

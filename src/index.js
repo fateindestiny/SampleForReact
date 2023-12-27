@@ -10,6 +10,7 @@ import {StoreProvider} from './stores';
 import {createRoot} from 'react-dom/client';
 import {IntlProvider} from 'react-intl';
 import locale from './locale';
+import GlobalPopupPortal from './ui/components/popup/GlobalPopup';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -22,6 +23,7 @@ root.render(
       locale={defaultLanguage}
       messages={flattenMessages(locale[defaultLanguage])}>
       <StoreProvider>
+        <GlobalPopupPortal />
         <LoadingPortals />
         <App />
       </StoreProvider>
