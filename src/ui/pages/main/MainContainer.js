@@ -45,6 +45,11 @@ const MainContainer = () => {
         navigate('/popup');
       },
     },
+    {
+      titleId: 'rippleSample.title',
+      buttonTitleId: 'rippleSample.buttonTitle',
+      onClick: () => {},
+    },
   ];
 
   return (

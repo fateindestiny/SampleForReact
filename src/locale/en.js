@@ -30,6 +30,10 @@ const en = {
     subPageTitle: 'Popup Sample Page',
     globalPopupMessage:'Global popup sample message',
   },
+  rippleSample: {
+    title: 'Ripple button sample',
+    buttonTitle: 'Click to effect ripple'
+  }
 };
 
 export default en;

@@ -1,18 +1,16 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
-import {SampleButton} from '../../../components/Button';
+import {RippleButton} from '../../../components/Button';
 
 const SampleListItemView = ({data: {titleId, buttonTitleId, onClick}}) => {
   return (
     <li>
-      <p>
+      <p style={{marginTop: '10px', marginBottom: '10px'}}>
         <FormattedMessage id={titleId} />
       </p>
-      <SampleButton
-        style={{marginTop: '10px', marginBottom: '10px'}}
-        onClick={onClick}>
+      <RippleButton onClick={onClick}>
         <FormattedMessage id={buttonTitleId} />
-      </SampleButton>
+      </RippleButton>
     </li>
   );
 };
