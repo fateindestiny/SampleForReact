@@ -11,6 +11,10 @@ import {createRoot} from 'react-dom/client';
 import {IntlProvider} from 'react-intl';
 import locale from './locale';
 import GlobalPopupPortal from './ui/components/popup/GlobalPopup';
+import FloatingButton from './ui/components/FloatingButton';
+import ErrorBoundary from './ui/pages/error/ErrorBoundary';
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -25,7 +29,11 @@ root.render(
       <StoreProvider>
         <GlobalPopupPortal />
         <LoadingPortals />
-        <App />
+        <ErrorBoundary>
+          <App />
+        </ErrorBoundary>
+        <FloatingButton />
+        <ToastContainer limit={1} newestOnTop />
       </StoreProvider>
     </IntlProvider>
   </HistoryRouter>,

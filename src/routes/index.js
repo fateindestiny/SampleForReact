@@ -3,11 +3,17 @@ import * as pages from '../ui/pages';
 const routes = [
   {
     path: '*',
+    element: <pages.NotFoundContainer />,
+  },
+  {
+    path: '/main',
     element: <pages.MainContainer />,
+    isShowFloatingButton: true,
   },
   {
     path: '/router',
     element: <pages.RouterContainer />,
+    isShowFloatingButton: true,
   },
   {
     path: '/navigation',
@@ -31,6 +37,7 @@ const routes = [
   {
     path: '/axios',
     element: <pages.AxiosContainer />,
+    isShowFloatingButton: true,
   },
   {
     path: '/popup',

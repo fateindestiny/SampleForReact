@@ -1,6 +1,10 @@
 import loadable from '@loadable/component';
 import Loading from '../components/Loading';
 
+export const NotFoundContainer = loadable(
+  () => import('./error/NotFoundContainer'),
+  {fallback: <Loading />},
+);
 export const MainContainer = loadable(() => import('./main/MainContainer'), {
   fallback: <Loading />,
 });

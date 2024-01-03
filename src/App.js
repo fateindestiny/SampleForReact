@@ -1,7 +1,6 @@
-import './App.css';
-import {useRoutes} from 'react-router';
-import useRouter from './hooks/useRouter';
-import routes from './routes';
+import {useRoutes} from 'react-router-dom';
+import routes from 'routes';
+import {useRouter} from './hooks';
 
 const App = () => {
   const {location} = useRouter();

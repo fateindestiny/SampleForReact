@@ -42,7 +42,6 @@ export default observer(() => {
   // 로딩시 뒷 컨텐츠 화면이 스크롤 되는 것을 막기 위한 용도.
   const bodyEl = useRef();
   useEffect(() => {
-    console.log('loading : ', isOpen, bodyEl);
     if (!bodyEl.current) {
       bodyEl.current = document.querySelector('body');
     }

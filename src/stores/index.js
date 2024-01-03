@@ -2,12 +2,14 @@ import React from 'react';
 import PortalStore from './portalStore';
 import SampleStore from './sampleStore';
 import ModalStore from './modalStore';
+import CommonStore from './commonStore';
 
 class RootStore {
   constructor() {
     this.portalStore = new PortalStore(this);
     this.sampleStore = new SampleStore(this);
     this.modalStore = new ModalStore(this);
+    this.commonStore = new CommonStore(this);
   }
 }
 
