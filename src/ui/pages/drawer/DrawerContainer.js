@@ -1,7 +1,7 @@
 import {FormattedMessage} from 'react-intl';
 import DrawerView from '../../components/DrawerView';
 import 'react-modern-drawer/dist/index.css';
-import {SampleButton} from '../../components/Button';
+import {RippleButton, SampleButton} from '../../components/Button';
 import {useCallback, useState} from 'react';
 import icon_close from '../../../assets/images/icon-close.svg';
 import {observer} from 'mobx-react-lite';
@@ -31,34 +31,28 @@ const DrawerContainer = () => {
       <p className="title">
         <FormattedMessage id={'drawerSample.subPageTitle'} />
       </p>
-      <SampleButton
-        style={{
-          marginTop: '10px',
-        }}
-        onClick={onClickOpenLeft}>
-        <FormattedMessage id={'drawerSample.openLeft'} />
-      </SampleButton>
-      <SampleButton
-        style={{
-          marginTop: '10px',
-        }}
-        onClick={onClickOpenRight}>
-        <FormattedMessage id={'drawerSample.openRight'} />
-      </SampleButton>
-      <SampleButton
-        style={{
-          marginTop: '10px',
-        }}
-        onClick={onClickOpenTop}>
-        <FormattedMessage id={'drawerSample.openTop'} />
-      </SampleButton>
-      <SampleButton
-        style={{
-          marginTop: '10px',
-        }}
-        onClick={onClickOpenBottom}>
-        <FormattedMessage id={'drawerSample.openBottom'} />
-      </SampleButton>
+      <ul>
+        <li style={{marginTop: '10px'}}>
+          <RippleButton onClick={onClickOpenLeft}>
+            <FormattedMessage id={'drawerSample.openLeft'} />
+          </RippleButton>
+        </li>
+        <li style={{marginTop: '10px'}}>
+          <RippleButton onClick={onClickOpenRight}>
+            <FormattedMessage id={'drawerSample.openRight'} />
+          </RippleButton>
+        </li>
+        <li style={{marginTop: '10px'}}>
+          <RippleButton onClick={onClickOpenTop}>
+            <FormattedMessage id={'drawerSample.openTop'} />
+          </RippleButton>
+        </li>
+        <li style={{marginTop: '10px'}}>
+          <RippleButton onClick={onClickOpenBottom}>
+            <FormattedMessage id={'drawerSample.openBottom'} />
+          </RippleButton>
+        </li>
+      </ul>
       <DrawerView isOpenDrawer={isOpen} direction={direction}>
         <div
           style={{
