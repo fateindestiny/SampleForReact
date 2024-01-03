@@ -28,12 +28,21 @@ const en = {
     title: 'Popup Sample',
     buttonTitle: 'Move Popup Sample Page',
     subPageTitle: 'Popup Sample Page',
-    globalPopupMessage:'Global popup sample message',
+    globalPopupMessage: 'Global popup sample message',
   },
   rippleSample: {
     title: 'Ripple button sample',
-    buttonTitle: 'Click to effect ripple'
-  }
+    buttonTitle: 'Click to effect ripple',
+  },
+  drawerSample: {
+    title: 'Drawer sample',
+    buttonTitle: 'Move Drawer Sample Page',
+    subPageTitle: 'Drawer sample page',
+    openRight: 'Open Right Drawer',
+    openLeft: 'Open Left Drawer',
+    openTop: 'Open Top Drawer',
+    openBottom: 'Open Bottom Drawer',
+  },
 };
 
 export default en;

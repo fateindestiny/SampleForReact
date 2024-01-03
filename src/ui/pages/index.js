@@ -42,3 +42,8 @@ export const PopupContainer = loadable(
   () => import('./popup/PopupSampleContainer'),
   {fallback: <Loading />},
 );
+
+export const DrawerContainer = loadable(
+    () => import('./drawer/DrawerContainer'),
+    {fallback: <Loading />}
+)

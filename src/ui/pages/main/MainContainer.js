@@ -50,6 +50,13 @@ const MainContainer = () => {
       buttonTitleId: 'rippleSample.buttonTitle',
       onClick: () => {},
     },
+    {
+      titleId: 'drawerSample.title',
+      buttonTitleId: 'drawerSample.buttonTitle',
+      onClick: () => {
+        navigate('/drawer')
+      }
+    }
   ];
 
   return (

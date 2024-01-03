@@ -43,6 +43,10 @@ const routes = [
     path: '/popup',
     element: <pages.PopupContainer />,
   },
+  {
+    path: '/drawer',
+    element: <pages.DrawerContainer />,
+  },
 ];
 
 export default routes;
