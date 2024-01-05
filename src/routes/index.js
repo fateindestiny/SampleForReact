@@ -47,6 +47,10 @@ const routes = [
     path: '/drawer',
     element: <pages.DrawerContainer />,
   },
+  {
+    path: '/form',
+    element: <pages.FormContainer />,
+  },
 ];
 
 export default routes;

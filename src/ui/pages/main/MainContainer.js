@@ -54,9 +54,16 @@ const MainContainer = () => {
       titleId: 'drawerSample.title',
       buttonTitleId: 'drawerSample.buttonTitle',
       onClick: () => {
-        navigate('/drawer')
-      }
-    }
+        navigate('/drawer');
+      },
+    },
+    {
+      titleId: 'formSample.title',
+      buttonTitleId: 'formSample.buttonTitle',
+      onClick: () => {
+        navigate('/form');
+      },
+    },
   ];
 
   return (

@@ -3,6 +3,10 @@ const en = {
     list: 'List',
     confirm: 'Confirm',
     cancel: 'cancel',
+    email: 'e-Mail',
+    name: 'Name',
+    required: 'Required',
+    submit: 'Submit',
   },
   routerSample: {
     title: 'Router Sample',
@@ -42,6 +46,13 @@ const en = {
     openLeft: 'Open Left Drawer',
     openTop: 'Open Top Drawer',
     openBottom: 'Open Bottom Drawer',
+  },
+  formSample: {
+    title: 'Form sample',
+    buttonTitle: 'Move Form sample page',
+    subPageTitle: 'Form sample page',
+    requiredEmail: 'Enter e-Mail.',
+    invalidEmail: 'Invalid e-Mail address.',
   },
 };
 

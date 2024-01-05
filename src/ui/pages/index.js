@@ -44,6 +44,11 @@ export const PopupContainer = loadable(
 );
 
 export const DrawerContainer = loadable(
-    () => import('./drawer/DrawerContainer'),
-    {fallback: <Loading />}
-)
+  () => import('./drawer/DrawerContainer'),
+  {fallback: <Loading />},
+);
+
+export const FormContainer = loadable(
+  () => import('./form/FormSampleContainer'),
+  {fallback: <Loading />},
+);
