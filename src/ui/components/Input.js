@@ -27,7 +27,7 @@ const Input = ({name, required, validateProps, onChange, ...restProps}) => {
       console.log('unmount');
       unregister(name);
     }
-  });
+  }, []);
 
   return (
     <input
