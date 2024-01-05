@@ -3,7 +3,10 @@ import Form from '../../../components/Form';
 import {RippleButton} from '../../../components/Button';
 import {FormattedMessage, useIntl} from 'react-intl';
 import InputWrapper from '../../../components/InputWrapper';
+import TextArea from '../../../components/TextArea';
+import {isEmpty} from 'lodash';
 
+const MIN_LENGTH = 10;
 const FormView = ({onSubmitHandler}) => {
   const {formatMessage} = useIntl();
   return (
@@ -52,6 +55,29 @@ const FormView = ({onSubmitHandler}) => {
             }}
             name="userName"
             type="text"
+          />
+        </li>
+        <li style={{marginTop: '10px', padding: '5px'}}>
+          <label htmlFor="description">
+            <FormattedMessage id={'common.description'} />
+          </label>
+          <TextArea
+            name="description"
+            style={{
+              height: '50px',
+              width: '100%',
+              marginTop: '5px',
+              border: '1px solid darkBlue',
+            }}
+            validateProps={{
+              validate: value =>
+                isEmpty(value) ||
+                value.length > MIN_LENGTH ||
+                formatMessage(
+                  {id: 'formSample.descMinLength'},
+                  {min: MIN_LENGTH},
+                ),
+            }}
           />
         </li>
         <li style={{marginTop: '10px'}}>

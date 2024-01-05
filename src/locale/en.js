@@ -7,6 +7,8 @@ const en = {
     name: 'Name',
     required: 'Required',
     submit: 'Submit',
+    result: 'Result',
+    description: 'Description',
   },
   routerSample: {
     title: 'Router Sample',
@@ -53,6 +55,7 @@ const en = {
     subPageTitle: 'Form sample page',
     requiredEmail: 'Enter e-Mail.',
     invalidEmail: 'Invalid e-Mail address.',
+    descMinLength: 'Description minimum size is {min}.'
   },
 };
 

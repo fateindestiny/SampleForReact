@@ -2,6 +2,7 @@ import {FormattedMessage} from 'react-intl';
 import FormView from './components/FormView';
 import {observer} from 'mobx-react-lite';
 import {useState} from 'react';
+import JSONPretty from 'react-json-pretty';
 
 const FormSampleContainer = () => {
   const [data, setData] = useState('');
@@ -21,9 +22,16 @@ const FormSampleContainer = () => {
           marginBottom: '10px',
           borderBottom: '1px solid black',
         }}>
-        Result
+        <FormattedMessage id={'common.result'} />
       </p>
-      {data}
+      <JSONPretty
+        data={data}
+        style={{
+          width: '100%',
+          whiteSpace: 'normal',
+          wordWrap: 'break-all',
+        }}
+      />
     </div>
   );
 };
