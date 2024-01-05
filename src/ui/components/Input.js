@@ -23,8 +23,11 @@ const Input = ({name, required, validateProps, onChange, ...restProps}) => {
   } = register(name, newValidate);
 
   useEffect(() => {
-    return () => unregister(name);
-  }, []);
+    return () => {
+      console.log('unmount');
+      unregister(name);
+    }
+  });
 
   return (
     <input
