@@ -78,6 +78,13 @@ const MainContainer = () => {
         navigate('/pullDownRefresh');
       },
     },
+    {
+      titleId: 'infiniteScrollSample.title',
+      buttonTitleId: 'infiniteScrollSample.buttonTitle',
+      onClick: () => {
+        navigate('/infiniteScroll');
+      },
+    },
   ];
 
   return (

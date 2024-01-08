@@ -59,6 +59,10 @@ const routes = [
     path: '/pullDownRefresh',
     element: <pages.PullDownRefreshContainer />,
   },
+  {
+    path: '/infiniteScroll',
+    element: <pages.InfiniteScrollContainer />,
+  },
 ];
 
 export default routes;

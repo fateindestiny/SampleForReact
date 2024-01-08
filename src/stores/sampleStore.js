@@ -1,6 +1,7 @@
 import {makeAutoObservable, runInAction} from 'mobx';
 import {observerLoadingProgress} from './portalStore';
 import {getSample01ListAPI} from '../apis/sample01Api';
+import {delay} from 'lodash';
 
 export default class SampleStore {
   constructor(root) {
@@ -11,6 +12,8 @@ export default class SampleStore {
   }
 
   isLoading = false;
+
+  sampleList = [];
 
   showLoading = () => {
     this.isLoading = true;
@@ -34,5 +37,20 @@ export default class SampleStore {
     } catch (e) {}
     this.isLoading = false;
     return result;
+  };
+
+  getMoreList = async startIndex => {
+    this.isLoading = true;
+    try {
+      await delay(() => {}, 1000);
+      let i = 0;
+      while (i < 10) {
+        this.sampleList.push({
+          title: `item no ${startIndex * 10 + i}`,
+        });
+        i++;
+      }
+    } catch (e) {}
+    this.isLoading = false;
   };
 }

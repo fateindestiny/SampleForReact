@@ -62,3 +62,8 @@ export const PullDownRefreshContainer = loadable(
   () => import('./pullDownRefresh/PullDownRefreshContainer'),
   {fallback: <Loading />},
 );
+
+export const InfiniteScrollContainer = loadable(
+  () => import('./infiniteScroll/InfiniteScrollContainer'),
+  {fallback: <Loading />},
+);

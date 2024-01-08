@@ -67,6 +67,11 @@ const en = {
     buttonTitle: 'Move pull down refresh page',
     subPageTitle: 'Pull down refresh sample page',
   },
+  infiniteScrollSample: {
+    title: 'Infinite scroll',
+    buttonTitle: 'Move infinite scroll sample page',
+    subPageTitle: 'Infinite scroll sample page',
+  },
 };
 
 export default en;
