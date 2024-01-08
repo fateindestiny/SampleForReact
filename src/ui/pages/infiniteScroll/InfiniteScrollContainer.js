@@ -3,6 +3,7 @@ import InfiniteScrollView from '../../components/InfiniteScrollView';
 import {useCallback, useEffect, useMemo, useState} from 'react';
 import {useStore} from '../../../hooks';
 import {observer} from 'mobx-react-lite';
+import {delay} from '../../../utils/commonUtils';
 
 const InfiniteScrollContainer = () => {
   const {
@@ -19,8 +20,9 @@ const InfiniteScrollContainer = () => {
     getMoreList(0);
   }, []);
 
-  const onLoadMore = useCallback(() => {
+  const onLoadMore = useCallback(async () => {
     console.log('onLoadMore');
+    await delay(1000);
     getMoreList(startIndex + 1);
     setStartIndex(startIndex + 1);
   }, [startIndex, list]);

@@ -15,3 +15,9 @@ export const flattenMessages = (nestedMessages, prefix = '') => {
     return msg;
   }, {});
 };
+
+export const delay = millis => {
+  return new Promise(resolve => {
+    const timeoutId = setTimeout(() => resolve(timeoutId), millis);
+  });
+};
