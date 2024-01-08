@@ -57,3 +57,8 @@ export const CustomHookContainer = loadable(
   () => import('./customHook/CustomHookContainer'),
   {fallback: <Loading />},
 );
+
+export const PullDownRefreshContainer = loadable(
+  () => import('./pullDownRefresh/PullDownRefreshContainer'),
+  {fallback: <Loading />},
+);

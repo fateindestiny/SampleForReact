@@ -71,6 +71,13 @@ const MainContainer = () => {
         navigate('/customHook');
       },
     },
+    {
+      titleId: 'pullDownRefreshSample.title',
+      buttonTitleId: 'pullDownRefreshSample.buttonTitle',
+      onClick: () => {
+        navigate('/pullDownRefresh');
+      },
+    },
   ];
 
   return (

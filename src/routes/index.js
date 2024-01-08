@@ -55,6 +55,10 @@ const routes = [
     path: '/customHook',
     element: <pages.CustomHookContainer />,
   },
+  {
+    path: '/pullDownRefresh',
+    element: <pages.PullDownRefreshContainer />,
+  },
 ];
 
 export default routes;

@@ -62,6 +62,11 @@ const en = {
     buttonTitle: 'Move custom Hook page',
     subPageTitle: 'Custom Hook page',
   },
+  pullDownRefreshSample: {
+    title: 'Pull down refresh',
+    buttonTitle: 'Move pull down refresh page',
+    subPageTitle: 'Pull down refresh sample page',
+  },
 };
 
 export default en;
