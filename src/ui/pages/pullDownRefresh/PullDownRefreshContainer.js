@@ -22,12 +22,10 @@ const PullDownRefreshContainer = () => {
       <PullDownRefreshView isPullable={true} onRefresh={onRefresh}>
         <div
           style={{
-            width: '100%',
             height: '100%',
           }}>
           <div
             style={{
-              width: '100%',
               height: '50px',
               textAlign: 'center',
               background: 'aliceblue',
@@ -42,7 +40,6 @@ const PullDownRefreshContainer = () => {
               list.map((item, index) => (
                 <li
                   style={{
-                    width: '100wv',
                     height: '50px',
                     padding: '5px',
                     border: '1px solid blueviolet',
