@@ -64,6 +64,13 @@ const MainContainer = () => {
         navigate('/form');
       },
     },
+    {
+      titleId: 'customHookSample.title',
+      buttonTitleId: 'customHookSample.buttonTitle',
+      onClick: () => {
+        navigate('/customHook');
+      },
+    },
   ];
 
   return (

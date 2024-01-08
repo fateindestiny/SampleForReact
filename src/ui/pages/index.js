@@ -52,3 +52,8 @@ export const FormContainer = loadable(
   () => import('./form/FormSampleContainer'),
   {fallback: <Loading />},
 );
+
+export const CustomHookContainer = loadable(
+  () => import('./customHook/CustomHookContainer'),
+  {fallback: <Loading />},
+);

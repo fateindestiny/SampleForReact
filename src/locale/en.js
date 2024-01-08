@@ -55,7 +55,12 @@ const en = {
     subPageTitle: 'Form sample page',
     requiredEmail: 'Enter e-Mail.',
     invalidEmail: 'Invalid e-Mail address.',
-    descMinLength: 'Description minimum size is {min}.'
+    descMinLength: 'Description minimum size is {min}.',
+  },
+  customHookSample: {
+    title: 'Custom Hook',
+    buttonTitle: 'Move custom Hook page',
+    subPageTitle: 'Custom Hook page',
   },
 };
 

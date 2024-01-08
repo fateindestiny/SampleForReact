@@ -51,6 +51,10 @@ const routes = [
     path: '/form',
     element: <pages.FormContainer />,
   },
+  {
+    path: '/customHook',
+    element: <pages.CustomHookContainer />,
+  },
 ];
 
 export default routes;
