@@ -77,6 +77,11 @@ const en = {
     buttonTitle: 'Move Swiper sample page',
     subPageTitle: 'Swiper sample page',
   },
+  eChartSample: {
+    title: 'EChart',
+    buttonTitle: 'Move EChart sample page',
+    subPageTitle: 'EChart sample page',
+  },
 };
 
 export default en;

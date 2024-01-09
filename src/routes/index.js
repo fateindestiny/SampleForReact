@@ -67,6 +67,10 @@ const routes = [
     path: '/swiper',
     element: <pages.SwiperContainer />,
   },
+  {
+    path: '/echart',
+    element: <pages.EChartContainer />,
+  },
 ];
 
 export default routes;

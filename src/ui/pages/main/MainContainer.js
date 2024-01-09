@@ -92,6 +92,13 @@ const MainContainer = () => {
         navigate('/swiper');
       },
     },
+    {
+      titleId: 'eChartSample.title',
+      buttonTitleId: 'eChartSample.buttonTitle',
+      onClick: () => {
+        navigate('/echart');
+      },
+    },
   ];
 
   return (

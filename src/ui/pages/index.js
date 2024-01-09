@@ -72,3 +72,8 @@ export const SwiperContainer = loadable(
   () => import('./swiper/SwiperContainer'),
   {fallback: <Loading />},
 );
+
+export const EChartContainer = loadable(
+  () => import('./echart/EChartContainer'),
+  {fallback: <Loading />},
+);
