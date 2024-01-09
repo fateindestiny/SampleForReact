@@ -72,6 +72,11 @@ const en = {
     buttonTitle: 'Move infinite scroll sample page',
     subPageTitle: 'Infinite scroll sample page',
   },
+  swiperSample: {
+    title: 'Swiper',
+    buttonTitle: 'Move Swiper sample page',
+    subPageTitle: 'Swiper sample page',
+  },
 };
 
 export default en;

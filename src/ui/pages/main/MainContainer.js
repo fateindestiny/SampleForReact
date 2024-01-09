@@ -85,6 +85,13 @@ const MainContainer = () => {
         navigate('/infiniteScroll');
       },
     },
+    {
+      titleId: 'swiperSample.title',
+      buttonTitleId: 'swiperSample.buttonTitle',
+      onClick: () => {
+        navigate('/swiper');
+      },
+    },
   ];
 
   return (

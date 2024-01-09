@@ -67,3 +67,8 @@ export const InfiniteScrollContainer = loadable(
   () => import('./infiniteScroll/InfiniteScrollContainer'),
   {fallback: <Loading />},
 );
+
+export const SwiperContainer = loadable(
+  () => import('./swiper/SwiperContainer'),
+  {fallback: <Loading />},
+);

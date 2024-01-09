@@ -63,6 +63,10 @@ const routes = [
     path: '/infiniteScroll',
     element: <pages.InfiniteScrollContainer />,
   },
+  {
+    path: '/swiper',
+    element: <pages.SwiperContainer />,
+  },
 ];
 
 export default routes;
